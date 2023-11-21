@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const gameBoard = document.getElementById("gameBoard");
   initializeBoard(gameBoard);
-  createScoreBoard(); // スコアボードを作成
-  setInitialDiscs(gameBoard);
-  updateScores(); // 初期スコアを表示
   addClickEvents();
+  setInitialDiscs(gameBoard);
+  createScoreBoard(); // スコアボードの作成と初期スコアの設定をここで行う
 });
 
 let currentPlayer = 'black';
@@ -46,6 +45,17 @@ function handleCellClick(event) {
   // 既にディスクがある場合や挟めない場合は何もしない
 }
 
+function createScoreBoard() {
+  let scoreBoard = document.getElementById('scoreBoard');
+  if (!scoreBoard) {
+    scoreBoard = document.createElement('div');
+    scoreBoard.id = 'scoreBoard';
+    document.body.insertBefore(scoreBoard, document.getElementById('gameBoard'));
+  }
+  updateScores(); // 初期スコアを updateScores 関数を使って設定
+  return scoreBoard;
+}
+
 function updateScores() {
   const discs = document.querySelectorAll(".disc");
   let blackCount = 0;
@@ -58,17 +68,6 @@ function updateScores() {
   const scoreBoard =
     document.getElementById("scoreBoard") || createScoreBoard();
   scoreBoard.textContent = `黒: ${blackCount}, 白: ${whiteCount}`;
-}
-
-function createScoreBoard() {
-    let scoreBoard = document.getElementById('scoreBoard');
-    if (!scoreBoard) {
-        scoreBoard = document.createElement('div');
-        scoreBoard.id = 'scoreBoard';
-        document.body.insertBefore(scoreBoard, document.getElementById('gameBoard'));
-    }
-    scoreBoard.textContent = `黒: 2, 白: 2`; // 初期スコア
-    return scoreBoard;
 }
 
 function placeDisc(cell, color) {
