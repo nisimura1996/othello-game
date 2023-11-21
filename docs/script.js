@@ -1,29 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
   const gameBoard = document.getElementById("gameBoard");
   initializeBoard(gameBoard);
+  createScoreBoard(); // スコアボードを作成
+  setInitialDiscs(gameBoard);
+  updateScores(); // 初期スコアを表示
   addClickEvents();
 });
 
-let currentPlayer = "black";
+let currentPlayer = 'black';
 const boardSize = 8; // ボードのサイズ（8x8）
 
 function initializeBoard(board) {
-  for (let i = 0; i < boardSize * boardSize; i++) {
-    const cell = document.createElement("div");
-    cell.classList.add("cell");
-    cell.dataset.index = i;
-    board.appendChild(cell);
-  }
-  // 初期配置のピースを設定
-  setInitialDiscs(board);
+    for (let i = 0; i < boardSize * boardSize; i++) {
+        const cell = document.createElement('div');
+        cell.classList.add('cell');
+        cell.dataset.index = i;
+        board.appendChild(cell);
+    }
 }
 
 function setInitialDiscs(board) {
-  const middle = boardSize / 2;
-  placeDisc(board.children[(middle - 1) * boardSize + (middle - 1)], "black");
-  placeDisc(board.children[(middle - 1) * boardSize + middle], "white");
-  placeDisc(board.children[middle * boardSize + (middle - 1)], "white");
-  placeDisc(board.children[middle * boardSize + middle], "black");
+    const middle = boardSize / 2;
+    placeDisc(board.children[(middle - 1) * boardSize + (middle - 1)], 'black');
+    placeDisc(board.children[(middle - 1) * boardSize + middle], 'white');
+    placeDisc(board.children[middle * boardSize + (middle - 1)], 'white');
+    placeDisc(board.children[middle * boardSize + middle], 'black');
 }
 
 function addClickEvents() {
@@ -60,10 +61,14 @@ function updateScores() {
 }
 
 function createScoreBoard() {
-  const scoreBoard = document.createElement("div");
-  scoreBoard.id = "scoreBoard";
-  document.body.insertBefore(scoreBoard, document.getElementById("gameBoard"));
-  return scoreBoard;
+    let scoreBoard = document.getElementById('scoreBoard');
+    if (!scoreBoard) {
+        scoreBoard = document.createElement('div');
+        scoreBoard.id = 'scoreBoard';
+        document.body.insertBefore(scoreBoard, document.getElementById('gameBoard'));
+    }
+    scoreBoard.textContent = `黒: 2, 白: 2`; // 初期スコア
+    return scoreBoard;
 }
 
 function placeDisc(cell, color) {
