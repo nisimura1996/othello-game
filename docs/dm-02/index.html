@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出汁と旬菜 燈火 - デザイン実装 (BEM)</title>
+    <link rel="stylesheet" href="css/base/variable.css">
+    <link rel="stylesheet" href="css/base/content.css">
+    <link rel="stylesheet" href="css/base/component.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="l-content__body l-container">
+        <main>
+
+            <!-- Hero Section -->
+            <section id="hero" class="hero">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <p class="hero__subtitle">松山で出会う、本物の出汁。</p>
+                        <h1 class="hero__title c-line-title">出汁と旬菜 燈火</h1>
+                        <p class="hero__subtitle c-autoWrap"><span>一滴に込めた情熱と、</span><span>松山の旬を味わう。</span></p>
+                        <a href="#contact" class="hero__cta">今すぐ予約する</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features">
+                <div class="features__inner">
+                    <h2 class="features__title c-line-title">お店の特徴</h2>
+                    <table class="features__table">
+                        <thead>
+                            <tr>
+                                <th class="features__head">特徴</th>
+                                <th class="features__head">詳細</th>
+                                <th class="features__head">おすすめの方</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="features__item"><strong>黄金の出汁</strong></td>
+                                <td class="features__item">厳選された鰹節と昆布を贅沢に使用し、毎日店内で一本ずつ丁寧に引いています。料理の根幹を支える深い味わいです。</td>
+                                <td class="features__item">料理の深みを楽しみたい方、滋味溢れる味を求める方</td>
+                            </tr>
+                            <tr>
+                                <td class="features__item"><strong>松山の旬を直送</strong></td>
+                                <td class="features__item">大将自ら市場へ足を運び、その日一番の鮮魚と色彩豊かな地場野菜を仕入れています。素材の力を最大限に活かします。</td>
+                                <td class="features__item">鮮度と季節感にこだわる方、旬の味覚を楽しみたい方</td>
+                            </tr>
+                            <tr>
+                                <td class="features__item"><strong>和モダンな空間</strong></td>
+                                <td class="features__item">一見、洋食屋のような落ち着いたテーブル席。肩肘張らずに上質な時間を過ごせる、大人のための隠れ家です。</td>
+                                <td class="features__item">接待、デート、特別な日の記念日、大切な会食の方</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Menu Section -->
+            <section id="menu" class="menu">
+                <div class="menu__inner has-bg">
+                    <h2 class="menu__title c-line-title">人気メニュー・料金</h2>
+                    <div class="menu__list">
+                        <article class="menu__item">
+                            <div class="menu__image">
+                                <img src="https://dummyimage.com/600x1:1/f0ede0/4b2c20" alt="出汁焼きうどん" class="menu__img">
+                            </div>
+                            <div class="menu__header">
+                                <span class="menu__name">出汁焼きうどん</span>
+                                <span class="menu__price">¥880</span>
+                            </div>
+                            <p class="menu__desc">当店の看板メニュー。一本一本に染み込んだ出汁の旨味と、香ばしい醤油の香りが食欲をそそります。</p>
+                        </article>
+                        <article class="menu__item">
+                            <div class="menu__image">
+                                <img src="https://dummyimage.com/600x1:1/f0ede0/4b2c20" alt="おまかせ出汁コース"
+                                    class="menu__img">
+                            </div>
+                            <div class="menu__header">
+                                <span class="menu__name">おまかせ出汁コース</span>
+                                <span class="menu__price">¥2,000〜</span>
+                            </div>
+                            <p class="menu__desc">先付から〆まで。その日の最高の素材を、最適な出汁料理で提供する店主おまかせの特別なコースです。</p>
+                        </article>
+                        <article class="menu__item">
+                            <div class="menu__image">
+                                <img src="https://dummyimage.com/600x1:1/f0ede0/4b2c20" alt="本日のお造り盛り合わせ"
+                                    class="menu__img">
+                            </div>
+                            <div class="menu__header">
+                                <span class="menu__name">本日のお造り盛り合わせ</span>
+                                <span class="menu__price">¥1,500</span>
+                            </div>
+                            <p class="menu__desc">松山港から直送された、ぷりぷりの鮮魚を厚切りで。出汁醤油とお塩で素材本来の甘みをお楽しみください。</p>
+                        </article>
+                        <article class="menu__item">
+                            <div class="menu__image">
+                                <img src="https://dummyimage.com/600x1:1/f0ede0/4b2c20" alt="特製・海老チリ タルタル添え"
+                                    class="menu__img">
+                            </div>
+                            <div class="menu__header">
+                                <span class="menu__name">特製・海老チリ タルタル添え</span>
+                                <span class="menu__price">¥980</span>
+                            </div>
+                            <p class="menu__desc">大将が洋食店で培った技が光る逸品。大鶏唐揚げと並ぶ人気メニューで、自家製タルタルが絶妙にマッチします。</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Atmosphere Section -->
+            <section id="atmosphere" class="atmosphere">
+                <div class="atmosphere__inner">
+                    <div class="atmosphere__layout">
+                        <img src="assets/atmosphere.png" alt="店内の雰囲気" class="atmosphere__img">
+                        <div class="atmosphere__text">
+                            <h2 class="atmosphere__title c-line-title">店内の雰囲気</h2>
+                            <p class="atmosphere__desc">
+                                温かみのある照明と、落ち着いた木目調の家具が並ぶ和モダンな空間。全席テーブル席で、お一人様からグループまで、ゆったりとお寛ぎいただけます。日常を忘れさせる大人の隠れ家として、静かな夜をお楽しみください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Target Section -->
+            <section id="target" class="target">
+                <div class="target__inner">
+                    <h2 class="target__title c-line-title">こんな方におすすめ</h2>
+                    <div class="target__list">
+                        <span class="target__card">美味しい出汁料理で癒されたい方</span>
+                        <span class="target__card">落ち着いた大人の隠れ家を求める方</span>
+                        <span class="target__card">大将こだわりの「おまかせ」を楽しみたい方</span>
+                        <span class="target__card">松山の旬を堪能したい観光客の方</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Info Section -->
+            <section id="info" class="info">
+                <div class="info__inner has-bg">
+                    <h2 class="info__title c-line-title">店舗情報・アクセス</h2>
+                    <div class="info__container">
+                        <ul class="info__list">
+                            <li class="info__item">
+                                <dt class="info__term">住所</dt>
+                                <dd class="info__description">〒790-XXXX 愛媛県松山市中央町 X-X-X（マルヨシセンター中央店付近）</dd>
+                            </li>
+                            <li class="info__item">
+                                <dt class="info__term">電話番号</dt>
+                                <dd class="info__description">089-XXX-XXXX</dd>
+                            </li>
+                            <li class="info__item">
+                                <dt class="info__term">営業時間</dt>
+                                <dd class="info__description">17:00 〜 23:00（料理L.O. 22:00 / 飲料L.O. 22:30）</dd>
+                            </li>
+                            <li class="info__item">
+                                <dt class="info__term">定休日</dt>
+                                <dd class="info__description">水曜日（祝日の場合は翌日の木曜日が振替休日となります）</dd>
+                            </li>
+                            <li class="info__item">
+                                <dt class="info__term">価格帯</dt>
+                                <dd class="info__description">3,000円 〜 5,000円（お通し代 300円）</dd>
+                            </li>
+                            <li class="info__item">
+
+                                <dt class="info__term">駐車場</dt>
+                                <dd class="info__description">5台完備（店舗北側に隣接。無料）</dd>
+                            </li>
+                            <li class="info__item">
+                                <dt class="info__term">アクセス</dt>
+                                <dd class="info__description">伊予鉄道「本町六丁目」停留所より徒歩約12分。中央通り沿い。</dd>
+                            </li>
+                        </ul>
+                        <div class="info__map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3313.8874049013652!2d132.76413702590324!3d33.841014227020764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe592d0be8411%3A0xa26d39eff8ba94a3!2z5oSb5aqb55yM5bqBIOacrOmkqA!5e0!3m2!1sja!2sjp!4v1776301488462!5m2!1sja!2sjp"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="faq">
+                <div class="faq__inner">
+                    <h2 class="faq__title c-line-title">よくある質問</h2>
+                    <div class="faq__list">
+                        <div class="faq__item">
+                            <p class="faq__question">Q. お酒を飲まなくても入りやすいですか？</p>
+                            <div class="faq__answer">
+                                <p>はい、大歓迎です。夜の定食や、出汁の効いた単品料理と白ご飯など、お食事メインでご利用されるお客様も多くいらっしゃいます。</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <p class="faq__question">Q. 辛いものが好きですが、おすすめはありますか？</p>
+                            <div class="faq__answer">
+                                <p>当店の「麻辣麺」をぜひお試しください。こだわりの出汁をベースに、山椒としびれる辛さを加えました。1から5辛までお好みに合わせて調整可能です。</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <p class="faq__question">Q. コース内容の相談はできますか？</p>
+                            <div class="faq__answer">
+                                <p>承ります。お通しを豪華にしたい、おつまみ中心にしてほしい等、ご予算に合わせて大将が腕を振るいます。ご予約時にご相談ください。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <div class="contact__inner">
+                    <div class="contact__cta">
+                        <h2 class="contact__title c-line-title c-autoWrap"><span>ご予約・</span><span>お問い合わせ</span></h2>
+                        <p class="contact__desc c-autoWrap">
+                            <span>こだわりの出汁と旬の味覚を、</span><span>最高な状態でお楽しみいただくため、</span><span>事前のご予約をお勧めしております。</span>
+                        </p>
+                        <a href="tel:089-XXX-XXXX" class="contact__btn">089-XXX-XXXX</a>
+                        <p class="contact__note c-autoWrap">
+                            <span>お電話、公式LINE、</span><span>ウェブ予約フォームにて承っております。</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>
