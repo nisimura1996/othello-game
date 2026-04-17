@@ -1,0 +1,105 @@
+:root {
+	--color_main: #2d241e; /* 深みのあるエスプレッソ：視認性最優先の見出し・本文用 */
+	--color_sub: #8d0000; /* イタリアンレッド（維持） */
+	--color_text: #2d241e;
+	--color_bg: #fffbf7; /* 暖和なアイボリー */
+
+	/* アクセント */
+	--c-act01: #d2691e; /* テラコッタ：装飾・強調用 */
+	--c-act01--dark: #a0522d;
+	--c-act01--light: #e6a75a;
+	--c-act01--lightest: #f4dca6;
+	--c-act02: #6b8e23; /* オリーブドラブ：自然のアクセント */
+
+	/* 黒・白 */
+	--c-dark: #000;
+	--c-light: #fff;
+
+	/* 灰色 */
+	--c-gray: #9a9a9a;
+	--c-gray--dark: #707070;
+	--c-gray--light: #f3f3f3;
+
+	--color_header_bg: rgba(255, 255, 255, 0.95);
+	--color_header_text: #1a1a1a;
+	--color_footer_bg: #3a2a1a; /* ダークチョコレート：温かみのある締め色 */
+	--color_footer_text: #ffffff;
+
+	/* セクション切替用背景色 */
+	--color_section_bg_alt: #f7f3e9;
+	--color_section_bg_dark: #556b2f; /* オリーブ背景 */
+
+	--ark-width--container: 1200px;
+	--ark-padding--container: min(48px, 4vw);
+	--width-sm: 960px;
+	--width-xs: 800px;
+
+	--g-sec-base: clamp(0.75rem, 0.572rem + 0.48vw, 1rem);
+	--g-sec--xl: calc(var(--g-sec-base) * 10);
+	--g-sec--lg: clamp(5.75rem, 4.504rem + 3.33vw, 7.5rem);
+	--g-sec--md: clamp(2.75rem, 1.147rem + 4.28vw, 5rem);
+	--g-sec--sm: clamp(1.5rem, 0.076rem + 3.8vw, 3.5rem);
+	--g-sec--xs: clamp(1.25rem, 0.36rem + 2.38vw, 2.5rem);
+
+	/* フォントファミリー */
+	--ff-m-base: "Noto Serif JP", serif;
+	--ff-g-base: "Montserrat", "Noto Sans JP", sans-serif;
+	--ff-m: var(--ff-m-base);
+	--ff-g: var(--ff-g-base);
+
+	--ft-size-base: 3.6vw;
+
+	/* 太さ */
+	--fw-xl: 900;
+	/* Extra Bold */
+	--fw-lg: 700;
+	/* Bold */
+	--fw-md: 500;
+	/* Medium */
+	--fw-sm: 400;
+	/* Normal */
+	--fw-xs: 300;
+	/* Light */
+
+	/* 行間 */
+	--lh-xl: 2;
+	--lh-lg: 1.8;
+	--lh-md: 1.6;
+	--lh-sm: 1.2;
+	--lh-xs: 1;
+
+	/* ボーダー */
+	--bd-w--lg: 4px;
+	--bd-w--md: 3px;
+	--bd-w--sm: 2px;
+	--bd-w--xs: 1px;
+
+	/* 角丸 */
+	--bd-r--xl: 1.25rem;
+	--bd-r--lg: 1rem;
+	--bd-r--md: 0.75rem;
+	--bd-r--sm: 0.5rem;
+	--bd-r--xs: 0.25rem;
+
+	/* 影　色は個別に指定 */
+	--shdw: 0px 1px 4px 0px #00000040;
+	--shdw--blur: 0px 4px 6px;
+	--shdw--ani: 0px 0px 0px;
+
+	/* アニメーション速度 */
+	--ani-t--slow: 1.2s;
+	--ani-t--late: 0.5s;
+	--ani-t--normal: 0.3s;
+	--ani-t--fast: 0.1s;
+
+	/* 装飾用不透明度 */
+	--op--ornament: 0.05;
+	--op--ornament-dark: 0.1;
+	--op--line: 0.3;
+}
+
+@media (min-width: 600px) {
+	:root {
+		--ft-size-base: 16px;
+	}
+}
