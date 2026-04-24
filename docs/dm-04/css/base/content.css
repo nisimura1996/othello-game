@@ -1,0 +1,61 @@
+/*===============================
+ベースコンテンツ
+=================================*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: var(--ft-size-base);
+	scroll-behavior: smooth;
+}
+
+body {
+	line-height: var(--lh-lg);
+	background-color: var(--c-bg);
+	color: var(--c-text);
+	font-family: var(--ff-m);
+	overflow-x: hidden;
+}
+
+.l-container {
+	max-width: calc(var(--ark-width--container) + var(--ark-padding--container) * 2);
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--ark-padding--container);
+	padding-right: var(--ark-padding--container);
+}
+
+/*===============================
+デフォルトのCSS
+=================================*/
+picture {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+svg {
+	width: inherit;
+	height: auto;
+	vertical-align: middle;
+	color: currentColor;
+}
+
+path {
+	fill: currentColor;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: opacity 0.3s ease;
+}
