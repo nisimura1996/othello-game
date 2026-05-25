@@ -1,0 +1,121 @@
+/*===============================================================================
+タイトル
+================================================================================*/
+
+/*===============================================================================
+自動折り返しテキスト
+================================================================================*/
+.c-autoWrap>* {
+	display: inline-block;
+}
+
+/*===============================================================================
+注釈テキスト
+================================================================================*/
+.c-note {
+	display: flex;
+}
+
+.c-note::before {
+	content: "※";
+}
+
+.c-note.--inline {
+	display: inline-flex;
+}
+
+/*===============================================================================
+縦書きテキスト
+================================================================================*/
+.c-vertical {
+	min-height: max-content;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+}
+
+/*===============================================================================
+ネオブロータリズム用共通パーツ
+================================================================================*/
+
+/* 共通カード */
+.c-card {
+	background-color: var(--c-light);
+	border: var(--bd-w--md) solid var(--c-dark);
+	border-radius: var(--bd-r--lg);
+	box-shadow: var(--shdw);
+	padding: var(--g-sec--xs);
+	transition: transform var(--ani-t--normal) ease, box-shadow var(--ani-t--normal) ease;
+}
+
+.c-card:hover {
+	transform: translate(-2px, -2px);
+	box-shadow: var(--shdw--blur);
+}
+
+/* 共通ボタン */
+.c-btn {
+	display: inline-block;
+	font-family: var(--ff-g);
+	font-weight: var(--fw-lg);
+	text-align: center;
+	color: var(--c-text);
+	border: var(--bd-w--md) solid var(--c-dark);
+	border-radius: var(--bd-r--md);
+	box-shadow: var(--shdw);
+	cursor: pointer;
+	transition: transform var(--ani-t--fast) ease, box-shadow var(--ani-t--fast) ease;
+}
+
+.c-btn:hover {
+	transform: translate(2px, 2px);
+	box-shadow: var(--shdw--ani);
+}
+
+.c-btn.--pink {
+	background-color: var(--c-act01);
+}
+
+.c-btn.--cyan {
+	background-color: var(--c-main);
+}
+
+.c-btn.--yellow {
+	background-color: var(--c-act03);
+}
+
+/* 共通バッジ */
+.c-badge {
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	font-size: 0.875rem;
+	font-weight: var(--fw-lg);
+	border: var(--bd-w--sm) solid var(--c-dark);
+	border-radius: 9999px;
+}
+
+.c-badge.--pink {
+	background-color: var(--c-act01);
+}
+
+.c-badge.--green {
+	background-color: var(--c-act02);
+}
+
+.c-badge.--yellow {
+	background-color: var(--c-act03);
+}
+
+.c-badge.--cyan {
+	background-color: var(--c-main);
+}
+
+/* セクションタイトル */
+.c-sec-title {
+	font-family: var(--ff-g);
+	font-size: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+	font-weight: var(--fw-xl);
+	line-height: var(--lh-sm);
+	color: var(--c-text);
+	margin-bottom: var(--g-sec--sm);
+	text-transform: uppercase;
+}
