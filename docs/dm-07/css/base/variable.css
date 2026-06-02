@@ -1,0 +1,113 @@
+:root {
+	/* メインカラー: スチールブラック（重厚、無骨） */
+	--c-main: #1a1b1c;
+	/* サブカラー: レンガの赤茶色（ヴィンテージ、暖かみ） */
+	--c-sub: #8c3d2b;
+	/* テキストカラー: コンクリートグレーとスチールの調和を意識した濃いグレー */
+	--c-text: #2a2b2c;
+	/* ベース背景色: 明るいコンクリートグレー */
+	--c-bg: #f4f4f4;
+
+	/* アクセント */
+	/* --c-act01: ビールの黄金色（視線を引く重要要素用） */
+	--c-act01: #dfa837;
+	--c-act01--dark: #c69123;
+	--c-act01--light: #e8bf65;
+	--c-act01--lightest: #f5e3ba;
+
+	/* --c-act02: ダークオレンジ（サブアクセント・クラフト感） */
+	--c-act02: #d35400;
+	--c-act02--dark: #b04300;
+	--c-act02--light: #e67e22;
+	--c-act02--lightest: #fdf2e9;
+
+	/* 黒・白 */
+	--c-dark: #111112;
+	--c-light: #ffffff;
+
+	/* 灰色 */
+	--c-gray: #888c8e;
+	--c-gray--dark: #55595b;
+	--c-gray--light: #e1e3e5;
+
+	--c-header_bg: rgba(26, 27, 28, 0.95);
+	--c-header_text: #ffffff;
+	--c-footer_bg: #1a1b1c;
+	--c-footer_text: #ffffff;
+
+	/* セクション切替用背景色 */
+	--c-section_bg_alt: #e9ecef;
+	/* インダストリアルグレー */
+	--c-section_bg_dark: #1a1b1c;
+	/* スチールブラック */
+
+	--ark-width--container: 1200px;
+	--ark-padding--container: min(48px, 4vw);
+	--width-sm: 960px;
+	--width-xs: 864px;
+
+	--g-sec--xl: clamp(7.5rem, 5.714rem + 4.76vw, 10rem);
+	--g-sec--lg: clamp(5rem, 4.107rem + 2.38vw, 6.25rem);
+	--g-sec--md: clamp(3.5rem, 2.429rem + 2.86vw, 5rem);
+	--g-sec--sm: clamp(2.5rem, 1.786rem + 1.9vw, 3.5rem);
+	--g-sec--xs: clamp(1.75rem, 1.214rem + 1.43vw, 2.5rem);
+
+	/* フォントファミリー */
+	--ff-m-base: "Hiragino Mincho ProN", serif;
+	--ff-g-base: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	/* 英字無骨サンセリフ：Oswald, 装飾：Special Elite */
+	--ff-oswald: "Oswald", sans-serif;
+	--ff-special: "Special Elite", system-ui, -apple-system, sans-serif;
+	--ff-m: var(--ff-special), var(--ff-m-base);
+	--ff-g: var(--ff-oswald), "Noto Sans JP", var(--ff-g-base);
+
+	--ft-size-base: 3.6vw;
+
+	/* 太さ */
+	--fw-xl: 900;
+	/* Extra Bold */
+	--fw-lg: 700;
+	/* Bold */
+	--fw-md: 500;
+	/* Medium */
+	--fw-sm: 400;
+	/* Normal */
+	--fw-xs: 300;
+	/* Light */
+
+	/* 行間 */
+	--lh-xl: 2;
+	--lh-lg: 1.8;
+	--lh-md: 1.6;
+	--lh-sm: 1.2;
+	--lh-xs: 1;
+
+	/* ボーダー */
+	--bd-w--lg: 4px;
+	--bd-w--md: 3px;
+	--bd-w--sm: 2px;
+	--bd-w--xs: 1px;
+
+	/* 角丸: インダストリアルは無骨さを出すため、角丸は極力小さく(シャープに) */
+	--bd-r--xl: 0.5rem;
+	--bd-r--lg: 0.375rem;
+	--bd-r--md: 0.25rem;
+	--bd-r--sm: 0.125rem;
+	--bd-r--xs: 0px;
+
+	/* 影　色は個別に指定 */
+	--shdw: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+	--shdw--blur: 0px 6px 12px;
+	--shdw--ani: 0px 0px 0px;
+
+	/* アニメーション速度 */
+	--ani-t--late: 0.5s;
+	--ani-t--normal: 0.3s;
+	--ani-t--fast: 0.1s;
+}
+
+@media (min-width: 600px) {
+	:root {
+		--ft-size-base: 16px;
+	}
+}
