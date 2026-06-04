@@ -1,0 +1,169 @@
+/*===============================================================================
+タイトル
+================================================================================*/
+
+/*===============================================================================
+自動折り返しテキスト
+================================================================================*/
+.c-autoWrap>* {
+	display: inline-block;
+}
+
+/*===============================================================================
+注釈テキスト
+================================================================================*/
+.c-note {
+	display: flex;
+}
+
+.c-note::before {
+	content: "※";
+}
+
+.c-note.--inline {
+	display: inline-flex;
+}
+
+/*===============================================================================
+縦書きテキスト
+================================================================================*/
+.c-vertical {
+	min-height: max-content;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+}
+
+/*===============================================================================
+ボタンコンポーネント
+================================================================================*/
+.c-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 14rem;
+	width: 100%;
+	min-width: fit-content;
+	padding: 1.25rem 1rem;
+	background-color: var(--c-main);
+	border: 1px solid transparent;
+	border-radius: var(--bd-r--xl);
+	letter-spacing: 0.15em;
+	font-size: 1.05rem;
+	font-weight: var(--fw-lg);
+	color: var(--c-light);
+	transition: background-color var(--ani-t--normal) ease, transform var(--ani-t--normal) ease, box-shadow var(--ani-t--normal) ease;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.c-btn:hover {
+	background-color: var(--c-act01);
+	transform: translateY(-2px);
+	box-shadow: 0 10px 20px rgba(142, 62, 38, 0.2);
+}
+
+.c-btn.--secondary {
+	background-color: transparent;
+	border: 1px solid var(--c-light);
+	color: var(--c-light);
+}
+
+.c-btn.--secondary:hover {
+	background-color: var(--c-light);
+	color: var(--c-light);
+}
+
+.c-btn.--line {
+	background-color: #06c755;
+	color: var(--c-light);
+}
+
+.c-btn.--line:hover {
+	background-color: #05b04b;
+	box-shadow: 0 10px 20px rgba(6, 199, 85, 0.2);
+}
+
+.c-btn.--act {
+	background-color: var(--c-act01);
+	color: var(--c-light);
+}
+
+.c-btn.--act:hover {
+	background-color: var(--c-act01--dark);
+	box-shadow: 0 10px 20px rgba(106, 46, 28, 0.3);
+}
+
+/*===============================================================================
+共通セクション縦書き見出しコンポーネント (l- / c- 分離)
+================================================================================*/
+.c-sec-title__wrapper {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+}
+
+.c-sec-title {
+	padding-right: clamp(1.5rem, 1.25rem + 1.5vw, 3rem);
+	letter-spacing: 0.3em;
+	line-height: var(--lh-sm);
+	text-orientation: mixed;
+	writing-mode: vertical-rl;
+	font-size: clamp(1.8rem, 1.5rem + 1.5vw, 3rem);
+	font-family: var(--ff-m);
+	font-weight: var(--fw-lg);
+	color: var(--c-main);
+}
+
+.c-sec-title__line {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	width: 2px;
+	height: 100%;
+	background-color: var(--c-sub);
+	transform-origin: top;
+	transform: scaleY(0);
+}
+
+/*===============================================================================
+共通セクションヘッダーコンポーネント (c-sec-header)
+================================================================================*/
+.c-sec-header {
+	text-align: center;
+	margin-bottom: var(--g-sec--lg);
+}
+
+.c-sec-header__title {
+	letter-spacing: 0.2em;
+	font-family: var(--ff-m);
+	font-size: clamp(1.8rem, 1.5rem + 1vw, 2.5rem);
+	font-weight: var(--fw-lg);
+	color: var(--c-main);
+	margin-bottom: 1rem;
+}
+
+.c-sec-header__subtitle {
+	margin-bottom: 1.5rem;
+	letter-spacing: 0.15em;
+	font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1.1rem);
+	color: var(--c-gray--dark);
+}
+
+.c-sec-header__line {
+	width: 80px;
+	height: 2px;
+	background-color: var(--c-sub);
+	margin-inline: auto;
+	transform-origin: center;
+	transform: scaleX(0);
+}
+
+/* 背景がダークなセクション向け反転表示 (BEM Modifier) */
+.c-sec-header.--inverse .c-sec-header__title {
+	color: var(--c-sub);
+}
+
+.c-sec-header.--inverse .c-sec-header__subtitle {
+	color: rgba(255, 255, 255, 0.7);
+}
