@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+.hp-w--full {
+	width: 100vw;
+	max-width: 100vw !important;
+	margin-inline: calc(50% - 50vw);
+}
+
+/*===============================================================================
+共通ボタンコンポーネント (c-btn)
+================================================================================*/
+.c-btn {
+	display: inline-block;
+	padding: 1rem;
+	border-radius: 3rem;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-size: 1.1rem;
+	font-weight: var(--fw-lg);
+	cursor: pointer;
+	transition: transform var(--ani-t--normal) ease, background-color var(--ani-t--normal) ease, color var(--ani-t--normal) ease, box-shadow var(--ani-t--normal) ease;
+}
+
+.c-btn:hover {
+	transform: translateY(-2px) scale(1.03);
+	box-shadow: 0 8px 20px rgba(90, 120, 100, 0.25);
+}
+
+.c-btn:active {
+	transform: translateY(0) scale(1);
+}
+
+/* 主要ボタン（グリーン背景、ベージュ文字） */
+.c-btn.--primary {
+	background-color: var(--c-main);
+	color: var(--c-bg);
+}
+
+.c-btn.--primary:hover {
+	background-color: var(--c-act01);
+	/* ホバーで温かみのあるテラコッタへ */
+	color: var(--c-light);
+}
+
+/* サブボタン（マスタード背景、チャコール文字） */
+.c-btn.--sub {
+	background-color: var(--c-sub);
+	color: var(--c-text);
+}
+
+.c-btn.--sub:hover {
+	background-color: var(--c-act01);
+	/* ホバーでテラコッタへ */
+	color: var(--c-light);
+}
+
+/*===============================================================================
+自動折り返しテキスト (c-autoWrap)
+================================================================================*/
+.c-autoWrap>* {
+	display: inline-block;
+}
+
+/*===============================================================================
+注釈テキスト (c-note)
+================================================================================*/
+.c-note {
+	display: flex;
+}
+
+.c-note::before {
+	content: "※";
+}
+
+.c-note.--inline {
+	display: inline-flex;
+}
+
+/*===============================================================================
+セクションタイトルコンポーネント (c-section-title)
+================================================================================*/
+.c-section-title {
+	margin-bottom: var(--g-sec--md);
+	text-align: center;
+}
+
+.c-section-title__sub {
+	display: block;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.15em;
+	font-size: 0.95rem;
+	font-weight: var(--fw-lg);
+	color: var(--c-main);
+	text-transform: uppercase;
+}
+
+.c-section-title__title {
+	margin-bottom: 1.5rem;
+	letter-spacing: 0.08em;
+	line-height: var(--lh-sm);
+	font-size: clamp(2rem, 1.429rem + 1.52vw, 2.8rem);
+	font-weight: var(--fw-xl);
+}
+
+.c-section-title__lead {
+	max-width: 600px;
+	margin: 0 auto;
+	letter-spacing: 0.06em;
+	line-height: var(--lh-lg);
+	font-size: 1.05rem;
+	color: var(--c-text);
+	opacity: 0.85;
+}
