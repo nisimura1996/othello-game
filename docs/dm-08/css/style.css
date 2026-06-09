@@ -1007,7 +1007,6 @@ Access (店舗情報・アクセス)
 .access__list dd a {
 	color: var(--c-text);
 	text-decoration: none;
-	font-weight: var(--fw-lg);
 }
 
 .access__list dd a:hover {
