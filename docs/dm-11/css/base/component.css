@@ -1,0 +1,145 @@
+/*===============================================================================
+タイトル
+================================================================================*/
+
+/*===============================================================================
+自動折り返しテキスト
+================================================================================*/
+.c-autoWrap>* {
+    display: inline-block;
+}
+
+/*===============================================================================
+注釈テキスト
+================================================================================*/
+.c-note {
+    display: flex;
+}
+
+.c-note::before {
+    content: "※";
+}
+
+.c-note.--inline {
+    display: inline-flex;
+}
+
+/*===============================================================================
+縦書きテキスト
+================================================================================*/
+.c-vertical {
+    min-height: max-content;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+}
+
+/*===============================================================================
+セクションタイトル (c-sec-title)
+================================================================================*/
+.c-sec-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--g-sec--md);
+}
+
+.c-sec-title__en {
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: var(--ff-m);
+    font-size: 0.875rem;
+    font-weight: var(--fw-md);
+    color: var(--c-sub);
+}
+
+.c-sec-title__ja {
+    margin: 0;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+    font-weight: var(--fw-xs);
+    color: var(--c-main);
+}
+
+/*===============================================================================
+共通ボタン (c-btn) - アヴァンギャルドな矢印ボタン (aligne.meオマージュ)
+================================================================================*/
+.c-btn {
+    --line-width: 1.5rem;
+    --move-length: 0.75rem;
+    --current-color: var(--c-main);
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 0.75rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    line-height: var(--lh-xs);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: var(--ff-m);
+    font-size: 0.875rem;
+    color: var(--current-color);
+    transition: var(--ani-t--normal) ease-out;
+    cursor: pointer;
+}
+
+/* アニメーション */
+.c-btn:is(:hover, :focus) {
+    --current-color: var(--c-sub);
+    transform: translatex(var(--move-length));
+}
+
+/* 左側の線（シャフト） */
+.c-btn::before {
+    display: inline-block;
+    content: "";
+    width: var(--line-width);
+    height: 1px;
+    background: var(--current-color);
+    transition: var(--ani-t--normal) ease-out;
+}
+
+/* アニメーション（線が伸びる） */
+.c-btn:is(:hover, :focus)::before {
+    width: calc(var(--line-width) + var(--move-length));
+}
+
+/* 右側の線（矢頭） */
+.c-btn::after {
+    display: inline-block;
+    content: "";
+    width: var(--line-width);
+    height: calc(var(--line-width) / 6);
+    border-right: 1px solid var(--current-color);
+    border-bottom: 1px solid var(--current-color);
+    transition: var(--ani-t--normal) ease-out;
+    transform: skew(45deg);
+}
+
+/* アニメーション（矢頭が縮む） */
+.c-btn:is(:hover, :focus)::after {
+    width: calc(var(--line-width) - var(--move-length));
+}
+
+.c-btn.--primary {
+    /* 基準スタイルを継承 */
+}
+
+.c-btn.--secondary {
+    --current-color: var(--c-sub);
+}
+
+.c-btn.--secondary:hover {
+    --current-color: var(--c-main);
+}
+
+
+/*===============================================================================
+ヘルパークラス
+================================================================================*/
+/* 全幅 */
+.hp-w--full {
+    width: 100vw;
+    max-width: 100vw !important;
+    margin-inline: calc(50% - 50vw);
+}
