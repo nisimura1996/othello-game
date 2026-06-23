@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAR RENXA（バー レンサ）| 愛媛県松山市のクラフトカクテル＆モクテルバー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/base/variable.css">
+    <link rel="stylesheet" href="css/base/content.css">
+    <link rel="stylesheet" href="css/base/component.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="body_wrap" class="l-content__aurora-bg">
+        <!-- パーティクル浮遊演出用のコンテナ -->
+        <div id="js-particles" class="l-content__particles"></div>
+        <div id="content" class="l-content__body l-container">
+            <main>
+
+                <!-- Section: Hero -->
+                <section id="hero" class="hero">
+                    <div class="hero__inner">
+                        <div class="hero__image">
+                            <img src="assets/hero_bg.png" alt="BAR RENXA カクテルイメージ">
+                        </div>
+                        <div class="hero__content js-reveal-up">
+                            <h1 class="hero__title">
+                                <span class="hero__title-line">美しき色彩が</span>
+                                <span class="hero__title-line">溶け合う、</span>
+                                <span class="hero__title-line">夜の特等席。</span>
+                            </h1>
+                            <p class="hero__desc">
+                                愛媛・松山。光と影、そして透明なグラスが紡ぎ出す、五感で味わうクラフトカクテル＆モクテルの世界。
+                            </p>
+                            <div class="hero__cta">
+                                <a href="#reservation" class="c-btn --glass">Web予約・空席確認</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: Concept -->
+                <section id="concept" class="concept">
+                    <div class="concept__inner">
+                        <div class="concept__grid">
+                            <div class="concept__card c-glass-card js-reveal-left">
+                                <div class="concept__header c-sec-header">
+                                    <span class="concept__subtitle c-sec-header__subtitle">Concept</span>
+                                    <h2 class="concept__title c-sec-header__title --fz-sm">飲むアート、色彩の移ろい</h2>
+                                    <hr class="c-grad-line concept__line c-sec-header__line">
+                                </div>
+                                <p class="concept__text">
+                                    バーテンダーが一液ずつ丁寧に重ね合わせるグラデーションカクテル。<br>
+                                    地元の旬の果実や厳選ハーブを使用し、飲むたびに味わいと色彩が変化する「移ろい」を楽しむ、五感のための体験です。
+                                </p>
+                            </div>
+                            <div class="concept__card c-glass-card js-reveal-right">
+                                <div class="concept__header c-sec-header">
+                                    <span class="concept__subtitle c-sec-header__subtitle">Mocktail</span>
+                                    <h2 class="concept__title c-sec-header__title --fz-sm">妥協なきプレミアム・モクテル</h2>
+                                    <hr class="c-grad-line concept__line c-sec-header__line">
+                                </div>
+                                <p class="concept__text">
+                                    お酒を飲まない方や運転される方にも「BARの夜」を満喫していただくため、自家製シロップとスパイスを用いた本格モクテルをご用意。誰しもが等しく酔いしれる空間をご提供します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: Menu -->
+                <section id="menu" class="menu">
+                    <div class="menu__inner js-reveal-up">
+                        <div class="menu__header c-sec-header">
+                            <span class="menu__subtitle c-sec-header__subtitle">Menu</span>
+                            <h2 class="menu__title c-sec-header__title">人気メニュー・料金</h2>
+                            <hr class="c-grad-line menu__line c-sec-header__line">
+                        </div>
+                        <div class="menu__grid">
+                            <article class="menu__item c-glass-card">
+                                <div class="menu__item-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=600"
+                                        alt="RENXA Aurora" class="menu__item-img">
+                                </div>
+                                <div class="menu__item-body">
+                                    <h3 class="menu__item-name">RENXA Aurora <span class="menu__item-jp">レンサ オーロラ</span>
+                                    </h3>
+                                    <p class="menu__item-price">1,600 円</p>
+                                    <p class="menu__item-desc">
+                                        バタフライピーと自家製レモンコーディアル、愛媛産柑橘が織りなす、夜空のオーロラを模したシグネチャーグラデーションカクテル。</p>
+                                </div>
+                            </article>
+                            <article class="menu__item c-glass-card">
+                                <div class="menu__item-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=600"
+                                        alt="Smoky Forest" class="menu__item-img">
+                                </div>
+                                <div class="menu__item-body">
+                                    <h3 class="menu__item-name">Smoky Forest <span class="menu__item-jp">スモーキー
+                                            フォレスト</span></h3>
+                                    <p class="menu__item-price">1,800 円</p>
+                                    <p class="menu__item-desc">ウッドチップの煙をグラスに閉じ込め、ハーブの香りを纏わせたスモーキーでディープな一杯。</p>
+                                </div>
+                            </article>
+                            <article class="menu__item c-glass-card">
+                                <div class="menu__item-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&q=80&w=600"
+                                        alt="Clear Botanical" class="menu__item-img">
+                                </div>
+                                <div class="menu__item-body">
+                                    <h3 class="menu__item-name">Clear Botanical <span class="menu__item-jp">クリア
+                                            ボタニカル</span></h3>
+                                    <p class="menu__item-price">1,300 円</p>
+                                    <p class="menu__item-desc">
+                                        ノンアルコールジンをベースに、フレッシュローズマリーとトニックウォーターで仕上げた、透き通る清涼感。（ノンアルコール）</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- その他のメニュー（タブ切り替え式テキストメニューリスト） -->
+                        <div class="menu__others c-glass-card">
+                            <h3 class="menu__others-title">その他のメニュー</h3>
+
+                            <!-- タブボタン -->
+                            <div class="menu__tabs-wrap">
+                                <div class="menu__tabs" role="tablist">
+                                    <button class="menu__tab-btn is-active" role="tab" aria-selected="true"
+                                        aria-controls="panel-cocktail" data-tab="cocktail">Craft Cocktail</button>
+                                    <button class="menu__tab-btn" role="tab" aria-selected="false"
+                                        aria-controls="panel-mocktail" data-tab="mocktail">Premium Mocktail</button>
+                                    <button class="menu__tab-btn" role="tab" aria-selected="false"
+                                        aria-controls="panel-spirits" data-tab="spirits">Beer & Spirits</button>
+                                    <button class="menu__tab-btn" role="tab" aria-selected="false"
+                                        aria-controls="panel-food" data-tab="food">Shared Food</button>
+                                    <span class="menu__tab-line"></span>
+                                </div>
+                            </div>
+
+                            <!-- タブコンテンツ -->
+                            <div class="menu__panels">
+                                <!-- Panel: Craft Cocktail -->
+                                <div id="panel-cocktail" class="menu__panel is-active" role="tabpanel"
+                                    aria-labelledby="tab-cocktail">
+                                    <div class="menu__list-grid">
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">季の美 ジントニック</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,200 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">京都のボタニカルを使用したプレミアムクラフトジン。繊細で和の香り豊かな一杯。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">エルダーフラワー・コリンズ</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,300 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">爽やかなジンにエルダーフラワーカーディアルとレモンを合わせた、華やかな一杯。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">スモーキー・マニッシュ</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,500 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">アイラウイスキーをベースに、ダークチェリーの風味を重ねたビターなショートカクテル。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">自家製モスコミュール</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,100 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">たっぷりのフレッシュ生姜とスパイスを漬け込んだ、辛口の自家製ジンジャーエールを使用。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">エスプレッソ・マティーニ</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,400 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">淹れたてのエスプレッソとプレミアムウォッカを使用。クリーミーで濃厚な大人のデザートカクテル。
+                                            </p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">季節のフルーツカクテル</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,600 円〜</span>
+                                            </div>
+                                            <p class="menu__list-desc">愛媛の契約農家から仕入れる旬 of 果物をふんだんに使用した、フレッシュカクテル。</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Panel: Premium Mocktail -->
+                                <div id="panel-mocktail" class="menu__panel" role="tabpanel"
+                                    aria-labelledby="tab-mocktail">
+                                    <div class="menu__list-grid">
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">ラベンダー・レモネード</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">950 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">自家製のオーガニックラベンダーシロップとフレッシュレモンが優しく香る、美しい薄紫色のモクテル。
+                                            </p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">スパイス・アップルサワー</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,000 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">シナモンやスターアニスを効かせた自家製りんごシロップと炭酸水が絶妙に調和する、温かみのある一杯。
+                                            </p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">ヴァージン・ブリーズ</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">900 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">クランベリーとグレープフルーツをベースに、ローズマリーの香りをプラスした清涼感溢れるモクテル。
+                                            </p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">ロイヤル・アールグレイ・トニック</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,100 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">
+                                                濃縮抽出した高級アールグレイティーとトニックウォーターをレイヤードした、非常に香り高いノンアルコールカクテル。</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Panel: Beer & Spirits -->
+                                <div id="panel-spirits" class="menu__panel" role="tabpanel"
+                                    aria-labelledby="tab-spirits">
+                                    <div class="menu__list-grid">
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">道後ビール（アルト）</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">950 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">愛媛の代表的な地ビール。香ばしい麦芽の風味とコクが特徴的な、琥珀色の地ビール。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">マッカラン 12年 シェリーオーク</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,800 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">華やかで上品なシェリー樽由来の香りと、リッチな甘みが広がるシングルモルトのロールスロイス。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">山崎 シングルモルト</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,600 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">日本を代表するシングルモルトウイスキー。繊細で複雑、かつ甘やかな香りが特徴。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">ロン サカパ 23年</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,200 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">カリブ海のハチミツを原料とし、ソレラシステムで熟成されたプレミアムラム。とろけるような甘さ。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Panel: Shared Food -->
+                                <div id="panel-food" class="menu__panel" role="tabpanel" aria-labelledby="tab-food">
+                                    <div class="menu__list-grid">
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">自家製ドライフルーツとスモークナッツ</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">850 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">愛媛産みかんなどの自家製ドライフルーツと、サクラチップで店内で燻製した香ばしいナッツ。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">伊予豚の熟成生ハム</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,200 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">愛媛のブランド豚「伊予豚」を贅沢に使用し、長期熟成させた旨味の凝縮された生ハム。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">3種のプレミアム・チーズボード</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">1,400 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">ウイスキーやカクテルに合わせた、国内外のセレクトチーズとクラッカーの盛り合わせ。</p>
+                                        </div>
+                                        <div class="menu__list-item">
+                                            <div class="menu__list-header">
+                                                <span class="menu__list-name">RENXA オリジナル 生チョコレート</span>
+                                                <span class="menu__list-dots"></span>
+                                                <span class="menu__list-price">900 円</span>
+                                            </div>
+                                            <p class="menu__list-desc">シングルモルトウイスキーの風味を練り込んだ、口溶け滑らかな大人のオリジナル生チョコレート。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="menu__notion c-note">チャージ料：800円（本日のアミューズ付き） / 平均予算：夜 4,000円 〜 6,000円</p>
+                    </div>
+                </section>
+
+                <!-- Section: Atmosphere -->
+                <section id="atmosphere" class="atmosphere">
+                    <div class="atmosphere__inner js-reveal-up">
+                        <div class="atmosphere__grid">
+                            <div class="atmosphere__img-wrap">
+                                <img src="https://images.unsplash.com/photo-1574096079513-d8259312b785?auto=format&fit=crop&q=80&w=800"
+                                    alt="BAR RENXA 店内" class="atmosphere__img">
+                            </div>
+                            <div class="atmosphere__content c-glass-card">
+                                <div class="atmosphere__header c-sec-header">
+                                    <span class="atmosphere__subtitle c-sec-header__subtitle">Space</span>
+                                    <h2 class="atmosphere__title c-sec-header__title --fz-sm">光が透き通る、特別な空間</h2>
+                                    <hr class="c-grad-line atmosphere__line c-sec-header__line">
+                                </div>
+                                <p class="atmosphere__text">
+                                    ガラスと光のコントラストを極限まで活かしたモダンな内装。<br>
+                                    半透明のスクリーンがプライベート感を保ちつつ、幻想的な夜を演出します。カウンター席でバーテンダーの手仕事に見惚れるもよし、テーブル席で深く語り合うもよし。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 3D円形カルーセル (atmosphere__inner直下) -->
+                        <div class="atmosphere__carousel-container hp-w--full">
+                            <div class="atmosphere__carousel-stage">
+                                <div class="atmosphere__carousel-track">
+                                    <div class="atmosphere__carousel-item">
+                                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=600"
+                                            alt="RENXA 店内1">
+                                    </div>
+                                    <div class="atmosphere__carousel-item">
+                                        <img src="https://images.unsplash.com/photo-1574096079513-d8259312b785?auto=format&fit=crop&q=80&w=600"
+                                            alt="RENXA 店内2">
+                                    </div>
+                                    <div class="atmosphere__carousel-item">
+                                        <img src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?auto=format&fit=crop&q=80&w=600"
+                                            alt="RENXA 店内3">
+                                    </div>
+                                    <div class="atmosphere__carousel-item">
+                                        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=600"
+                                            alt="RENXA 店内4">
+                                    </div>
+                                    <div class="atmosphere__carousel-item">
+                                        <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&q=80&w=600"
+                                            alt="RENXA 店内5">
+                                    </div>
+                                    <div class="atmosphere__carousel-item">
+                                        <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&q=80&w=600"
+                                            alt="RENXA 店内6">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ナビゲーション -->
+                            <button class="atmosphere__carousel-btn --prev" aria-label="前へ">&larr;</button>
+                            <button class="atmosphere__carousel-btn --next" aria-label="次へ">&rarr;</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: Recommend -->
+                <section id="recommend" class="recommend">
+                    <div class="recommend__inner js-reveal-up">
+                        <div class="recommend__header c-sec-header">
+                            <span class="recommend__subtitle c-sec-header__subtitle">Recommend</span>
+                            <h2 class="recommend__title c-sec-header__title">こんな方におすすめ</h2>
+                            <hr class="c-grad-line recommend__line c-sec-header__line">
+                        </div>
+                        <div class="recommend__list">
+                            <div class="recommend__item c-glass-card">
+                                <span class="recommend__num">01</span>
+                                <h3 class="recommend__item-title">特別なデートや記念日に</h3>
+                                <p class="recommend__item-text">光と影が織りなす空間と、美しい色彩のドリンクが大切なひとときを華やかに演出します。</p>
+                            </div>
+                            <div class="recommend__item c-glass-card">
+                                <span class="recommend__num">02</span>
+                                <h3 class="recommend__item-title">お酒を飲まない夜の社交に</h3>
+                                <p class="recommend__item-text">本格的なノンアルコール「モクテル」が充実。お酒が苦手な方も気兼ねなくBARの雰囲気を満喫できます。</p>
+                            </div>
+                            <div class="recommend__item c-glass-card">
+                                <span class="recommend__num">03</span>
+                                <h3 class="recommend__item-title">静かに自分と向き合いたい時に</h3>
+                                <p class="recommend__item-text">出張や一日の終わりに、スタイリッシュなカウンター席で上質なグラスを傾ける穏やかな一人時間。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: Voice -->
+                <section id="voice" class="voice">
+                    <!-- ノイズテクスチャオーバーレイ（セクション全域） -->
+                    <div class="voice__noise-overlay">
+                        <svg width="100%" height="100%">
+                            <filter id="noiseFilter">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3"
+                                    stitchTiles="stitch" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" />
+                            </filter>
+                            <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+                        </svg>
+                    </div>
+                    <div class="voice__inner js-reveal-up">
+                        <div class="voice__header c-sec-header">
+                            <span class="voice__subtitle c-sec-header__subtitle">Voice</span>
+                            <h2 class="voice__title c-sec-header__title">お客様の声</h2>
+                            <hr class="c-grad-line voice__line c-sec-header__line">
+                        </div>
+                        <div class="voice__list">
+                            <blockquote class="voice__item c-glass-card">
+                                <p class="voice__text">
+                                    「ノンアルコールのモクテルが驚くほど本格的で、お酒が飲めない私も主人と同じテンションで素晴らしい時間を過ごせました。オーロラのようなカクテルの見た目にも感動です。」
+                                </p>
+                                <cite class="voice__author">30代・女性（デート利用）</cite>
+                            </blockquote>
+                            <blockquote class="voice__item c-glass-card">
+                                <p class="voice__text">
+                                    「出張の際に立ち寄りました。静かで落ち着いたグラスモルフィズムの空間がとても居心地良く、マスターの作るカクテルはどれも一級品。また松山に来る際は必ず寄ります。」</p>
+                                <cite class="voice__author">40代・男性（一人利用）</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: FAQ -->
+                <section id="faq" class="faq">
+                    <div class="faq__inner js-reveal-up">
+                        <div class="faq__header c-sec-header">
+                            <span class="faq__subtitle c-sec-header__subtitle">FAQ</span>
+                            <h2 class="faq__title c-sec-header__title">よくある質問</h2>
+                            <hr class="c-grad-line faq__line c-sec-header__line">
+                        </div>
+                        <div class="faq__list">
+                            <details class="faq__item c-glass-card">
+                                <summary class="faq__question">お酒が全く飲めないのですが、利用しても大丈夫ですか？</summary>
+                                <div class="faq__answer">
+                                    <p>はい、大歓迎です。当店はノンアルコールカクテル（モクテル）にも非常に力を入れております。バーの雰囲気と、バーテンダーが目の前で仕上げる本格的な一杯をぜひお楽しみください。
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="faq__item c-glass-card">
+                                <summary class="faq__question">ドレスコードやマナーはありますか？</summary>
+                                <div class="faq__answer">
+                                    <p>厳格なドレスコードはございませんが、スマートカジュアルを推奨しております。また、他のお客様の静かな時間を尊重するため、大声での会話や通話はご遠慮いただいております。
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="faq__item c-glass-card">
+                                <summary class="faq__question">予約なしでの入店は可能ですか？</summary>
+                                <div class="faq__answer">
+                                    <p>席数に限りがあるため、特に週末はご予約をお勧めしておりますが、空席がある場合はご予約なしでもご案内可能です。お電話にて空席状況をお問い合わせください。</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: Access -->
+                <section id="access" class="access">
+                    <div class="access__inner js-reveal-up">
+                        <div class="access__header c-sec-header">
+                            <span class="access__subtitle c-sec-header__subtitle">Access</span>
+                            <h2 class="access__title c-sec-header__title">アクセス・店舗情報</h2>
+                            <hr class="c-grad-line access__line c-sec-header__line">
+                        </div>
+                        <div class="access__grid">
+                            <div class="access__info c-glass-card">
+                                <dl class="access__list">
+                                    <dt>店名</dt>
+                                    <dd>BAR RENXA（バー レンサ）</dd>
+                                    <dt>住所</dt>
+                                    <dd>〒790-0004 愛媛県松山市大街道2丁目5-X（大街道電停から徒歩3分、ロープウェイ街入口付近）</dd>
+                                    <dt>電話番号</dt>
+                                    <dd>089-989-7570</dd>
+                                    <dt>営業時間</dt>
+                                    <dd>18:00 〜 01:00（料理L.O. 00:00 / 飲料L.O. 00:30）</dd>
+                                    <dt>定休日</dt>
+                                    <dd>月曜日（祝日の場合は翌火曜日が振替休日となります）</dd>
+                                    <dt>駐車場</dt>
+                                    <dd>なし（近隣の提携駐車場あり：大街道第一駐車場ご利用で1時間無料券進呈）</dd>
+                                </dl>
+                            </div>
+                            <!-- Google Mapsなどのiframeダミー -->
+                            <div class="access__map-wrap c-glass-card">
+                                <div class="access__map-inner">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.435777413495!2d132.7698642!3d33.8402428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe5f458555555%3A0x5555555555555555!2z5aSn6KGX6YGT!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: Contact (ui2.jpg再現レイアウト) -->
+                <section id="reservation" class="contact">
+                    <div class="contact__inner">
+                        <div class="contact__grid js-reveal-up">
+
+                            <!-- 左側：ui2.jpg のフッターメニュー風リンク群 -->
+                            <div class="contact__menu c-glass-card">
+                                <div class="contact__logo-wrap">
+                                    <span class="contact__logo">Site Map</span>
+                                    <span class="contact__logo-dots">
+                                        <span class="contact__dot --pink"></span>
+                                        <span class="contact__dot --blue"></span>
+                                        <span class="contact__dot --green"></span>
+                                    </span>
+                                </div>
+                                <div class="contact__links-grid">
+                                    <div class="contact__links-col">
+                                        <span class="contact__col-title">About</span>
+                                        <a href="#concept" class="contact__link">コンセプト</a>
+                                        <a href="#atmosphere" class="contact__link">空間・店内</a>
+                                    </div>
+                                    <div class="contact__links-col">
+                                        <span class="contact__col-title">Service</span>
+                                        <a href="#menu" class="contact__link">お品書き</a>
+                                        <a href="#recommend" class="contact__link">おすすめシーン</a>
+                                    </div>
+                                    <div class="contact__links-col">
+                                        <span class="contact__col-title">Info</span>
+                                        <a href="#access" class="contact__link">店舗情報</a>
+                                        <a href="#faq" class="contact__link">よくある質問</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 右側：ui2.jpg の青いContactボックス -->
+                            <div class="contact__box js-reveal-right">
+                                <span class="contact__box-subtitle">Contact</span>
+                                <h3 class="contact__box-title">お問い合わせ・ご予約</h3>
+                                <p class="contact__box-desc">お問い合わせフォームまたはお電話にて、お気軽にお問い合わせください。</p>
+
+                                <div class="contact__box-actions">
+                                    <a href="#" class="c-btn --outline contact__box-btn">お問い合わせフォーム &rarr;</a>
+                                </div>
+
+                                <div class="contact__box-tel-wrap">
+                                    <a href="tel:089-989-7570" class="contact__box-tel-link">
+                                        <span class="contact__box-tel-icon">&#9742;</span> 089-989-7570
+                                    </a>
+                                    <p class="contact__box-tel-time">受付時間 : 17:00〜01:00 ※月曜定休</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- GSAP / ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

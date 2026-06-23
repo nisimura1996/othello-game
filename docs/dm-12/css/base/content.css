@@ -1,0 +1,80 @@
+/*===============================
+ベースコンテンツ
+=================================*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: var(--ft-size-base);
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	min-width: 100%;
+	max-width: 100%;
+	background-color: var(--c-bg);
+	overflow-x: clip;
+	line-height: var(--lh-lg);
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	font-family: var(--ff-m);
+	font-size: 1rem;
+	color: var(--c-text);
+	-webkit-text-size-adjust: 100%;
+}
+
+#body_wrap {
+	position: relative;
+	z-index: 1;
+	max-width: 100%;
+	overflow-x: clip;
+}
+
+.l-container {
+	max-width: calc(var(--ark-width--container) + var(--ark-padding--container) * 2);
+	margin: var(--g-sec--md) auto;
+	padding-right: var(--ark-padding--container);
+	padding-left: var(--ark-padding--container);
+}
+
+.l-content {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto 6em;
+	padding-top: 2em;
+}
+
+/*===============================
+デフォルトのCSS
+=================================*/
+picture {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+svg {
+	width: inherit;
+	height: auto;
+	vertical-align: middle;
+	color: currentColor;
+}
+
+path {
+	fill: currentColor;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: opacity 0.3s ease;
+}
