@@ -1,0 +1,91 @@
+/*===============================================================================
+タイトル
+================================================================================*/
+
+/*===============================================================================
+自動折り返しテキスト
+================================================================================*/
+.c-autoWrap>* {
+	display: inline-block;
+}
+
+/*===============================================================================
+注釈テキスト
+================================================================================*/
+.c-note {
+	display: flex;
+}
+
+.c-note::before {
+	content: "※";
+}
+
+.c-note.--inline {
+	display: inline-flex;
+}
+
+/*===============================================================================
+縦書きテキスト
+================================================================================*/
+.c-vertical {
+	min-height: max-content;
+	text-orientation: mixed;
+	writing-mode: vertical-rl;
+}
+
+/*===============================================================================
+ボタンコンポーネント
+================================================================================*/
+.c-btn {
+	display: inline-block;
+	padding: 1rem .5rem;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-weight: var(--fw-lg);
+	transition: transform var(--ani-t--normal) ease, background-color var(--ani-t--normal) ease, color var(--ani-t--normal) ease, border-color var(--ani-t--normal) ease;
+	cursor: pointer;
+}
+
+.c-btn:hover {
+	transform: translateY(-3px);
+}
+
+.c-btn.--hero {
+	padding: 1rem 1.5rem;
+	background-color: var(--c-main);
+	border: 1px solid var(--c-sub);
+	border-radius: var(--bd-r--xl);
+	box-shadow: 0 8px 24px rgba(34, 18, 11, 0.15);
+	color: var(--c-bg);
+}
+
+.c-btn.--hero:hover {
+	background-color: var(--c-sub);
+	color: var(--c-main);
+}
+
+.c-btn.--primary {
+	background-color: var(--c-main);
+	border: 1px solid var(--c-main);
+	border-radius: var(--bd-r--sm);
+	color: var(--c-bg);
+}
+
+.c-btn.--primary:hover {
+	background-color: var(--c-sub);
+	border-color: var(--c-sub);
+	color: var(--c-main);
+}
+
+.c-btn.--secondary {
+	background-color: var(--c-light);
+	border: 1px solid var(--c-sub);
+	border-radius: var(--bd-r--sm);
+	color: var(--c-main);
+}
+
+.c-btn.--secondary:hover {
+	background-color: var(--c-section_bg_alt);
+}
